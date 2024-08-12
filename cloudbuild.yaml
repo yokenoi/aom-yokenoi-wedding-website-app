@@ -1,0 +1,24 @@
+steps:
+  # Build the container image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '--tags', '${_IMAGE_NAME}', '.']
+  # Push the container image to Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', '${_IMAGE_NAME}']
+  # Deploy container image to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args: 
+    - 'run'
+    - 'deploy'
+    - '$_SERVICE_NAME'
+    - '--image=${_IMAGE_NAME}'
+    - '--region=$LOCATION'
+    - '--max-instances=3'
+    - '--service-account=${_SERVICE_ACCOUNT}'
+    - '--platform=managed'
+    - '--allow-unauthenticated'
+images:
+  - ${_IMAGE_NAME}
+substitutions:
+  _IMAGE_NAME: '${LOCATION}-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REPO_NAME}/${_SERVICE_NAME}:${COMMIT_SHA}'

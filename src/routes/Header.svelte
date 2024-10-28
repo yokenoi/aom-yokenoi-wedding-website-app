@@ -26,20 +26,20 @@
         display: grid;
         justify-items: center;
         grid-template-rows: 18% 74% 8%;
-        row-gap: none;
-
+        gap: 0;
     }
     
     header {
         width: 100%;
         max-width: 480px;
-        margin: 0;
+        margin-bottom: -4px;
         position: relative;
+        background-image: url("$lib/images/header/home_bg.png");
+        background-size: contain;
+        background-repeat: no-repeat;
         & > img {
             width: 100%;
-            height: auto;
-            margin: 0;
-            padding: 0;
+            opacity: 0;
         }
     }
     
@@ -65,8 +65,6 @@
         font-size: 18px;
         font-style: italic;
         line-height: 0;
+        font-weight: 300;
     }
-
-
-
 </style>

@@ -1,5 +1,5 @@
 <script>
-    let { caption, img, url } = $$props()
+    let { caption, img, url } = $props()
 </script>
 
 

@@ -31,7 +31,6 @@
     
     header {
         width: 100%;
-        max-width: 480px;
         margin-bottom: -4px;
         position: relative;
         background-image: url("$lib/images/header/home_bg.png");
@@ -67,4 +66,5 @@
         line-height: 0;
         font-weight: 300;
     }
+    
 </style>

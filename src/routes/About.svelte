@@ -1,14 +1,23 @@
 <script>
-    import about from '$lib/images/card/about.png'
-    import theme from '$lib/images/card/theme.svg'
+    import about from '$lib/images/about/about.webp'
+    import theme from '$lib/images/about/theme.svg'
+    import flowers from '$lib/images/about/flowers.webp'
 </script>
 
-<section class="card">
+<section id="about">
     <p class="quote">Love brings us together,
         <br>and we would be honoured if you could join us to
         <br>celebrate the wedding of
     </p>
+    <div class="name">
+        <span class="first-name">Usanisa</span>
+        <span class="last-name">Buanaree</span>
+    </div>
     <img src="{about}" alt="about" class="about">
+    <div class="name">
+        <span class="first-name">Methasit</span>
+        <span class="last-name">Pengmatchaya</span>
+    </div>
     <div class="vertical-break"></div>
     <p>Enchanted to meet you</p>
     <div class="flex-center">
@@ -28,27 +37,47 @@
     <span class="dress-code">DRESS CODE</span>
     <img src="{theme}" alt="theme" class="theme">
 </section>
+<img src="{flowers}" alt="flowers" class="flowers">
 
 <style>
-
+    .flowers {
+        max-width: 480px;
+        width: 100%;
+        position: relative;
+        top: -10%;
+        margin-bottom: -50%;
+    }
     .theme {
         margin-top: 12px;
+        max-width: 50%;
     }
     
-    .card {
+    #about {
         display: grid;
         justify-items: center;
         color: #7B5E49;
-        padding-bottom: 50px;
-        background-image: url('$lib/images/card/bg.png');
-        background-size: contain;
-        background-position: bottom;
-        background-repeat: no-repeat;
+    }
+
+    .name {
+        font-family: "Cormorant SC";
+        font-weight: 300;
+        text-align: center;
+        color: #6E7A58;
+        display: grid;
+        justify-content: center;
+        line-height: 30px;
+        & > .first-name {
+            font-size: 48px;
+        }
+        & > .last-name {
+            font-size: 24px;
+        }
     }
 
     .about {
         width: 70%;
         max-width: 310px;
+        margin: 24px;
     }
 
     .vertical-break {
@@ -68,7 +97,7 @@
     }
 
     .date-text {
-        font-family: "Cormorant";
+        font-family: "Cormorant SC";
         font-size: 18px;
         font-weight: 500;
         text-align: center;
@@ -120,7 +149,7 @@
     }
 
     .dress-code {
-        font-family: "Cormorant";
+        font-family: "Cormorant SC";
         font-size: 24px;
         font-weight: 600;
         text-align: center;

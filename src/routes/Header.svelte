@@ -1,5 +1,5 @@
 <script>
-    import background from '$lib/images/header/home_bg.png'
+    import background from '$lib/images/header/bg.webp'
     import logo from '$lib/images/header/logo.svg'
     import banner from '$lib/images/header/banner.svg'
 </script>
@@ -33,7 +33,7 @@
         width: 100%;
         margin-bottom: -4px;
         position: relative;
-        background-image: url("$lib/images/header/home_bg.png");
+        background-image: url("$lib/images/header/bg.webp");
         background-size: contain;
         background-repeat: no-repeat;
         & > img {

@@ -22,7 +22,6 @@
             height: 100vh;
             background: #F9F6F2;
         }
-
     </style>
 </svelte:head>
 

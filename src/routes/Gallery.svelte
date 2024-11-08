@@ -7,7 +7,7 @@
     <div class="gallery">
         <h2>PHOTO GALLERY</h2>
         <div>
-            <Location caption="London, England" img={londonCard}/>
+            <Location caption="London, England" img={londonCard} url="gallery/london"/>
         </div>
     </div>    
 </section>

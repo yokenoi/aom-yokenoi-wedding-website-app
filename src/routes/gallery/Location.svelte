@@ -8,8 +8,7 @@
     <div class="image" style:background-image='url({img})'></div>
     <div class="vertical-break"></div>
     <span>{caption}</span>
-    <!-- <a href="{url}">View</a> -->
-     <a>Coming Soon</a>
+     <a href={url}>View</a>
 </div>
 
 <style>

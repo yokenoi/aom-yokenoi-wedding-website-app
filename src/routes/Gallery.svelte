@@ -19,6 +19,7 @@
         background-image: url('$lib/images/gallery/header.webp');
         background-size: contain;
         background-repeat: no-repeat;
+        background-color: #F9F6F2;
     }
 
     h2 {
@@ -34,6 +35,7 @@
         display: grid;
         justify-items: center;
         padding-top: 38%;
+        padding-bottom: 20vh;
 
         & > div {
             width: 100%;

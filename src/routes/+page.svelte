@@ -1,8 +1,14 @@
 <script>
+    import Menu from "./Menu.svelte";
     import Header from "./Header.svelte";
     import About from "./About.svelte";
     import Gallery from "./Gallery.svelte";
     import metaImage from '$lib/images/meta_image.webp'
+
+    let menuState = $state(false);
+    
+    
+    
 </script>
 
 <svelte:head>
@@ -16,11 +22,11 @@
     <style>
         body {
             margin: 0 auto;
-            padding: 0;
+            padding: 0 0 0 0;
             width: 100%;
             max-width: 480px;
             height: 100vh;
-            background: #F9F6F2;
+            background-color: #F9F6F2;
         }
     </style>
 </svelte:head>

@@ -48,10 +48,10 @@
         margin-bottom: 4px;
     }
 
-    /* a:active {
+    a:active {
         color: white;
         background-color: #7B5E49;
-    } */
+    }
 
     span {
         font-style: italic;

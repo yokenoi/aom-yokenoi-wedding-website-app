@@ -3,15 +3,19 @@
     import logo from '$lib/images/header/logo.svg'
     import banner from '$lib/images/header/banner.svg'
 
-    let menu = $state(false);
-    
+    import Menu from './Menu.svelte';
+
+    let menuState = $state(false)
+    const changeState = () => menuState = !menuState
 </script>
+
+<Menu display={menuState ? "initial" : "none"} changeState={changeState}/>
 
 <header>
     <img src="{background}" class="background" alt="bg_img">
     <div class="container">
         <div class="header">
-            <button aria-label="menu">
+            <button aria-label="menu" onclick={changeState}>
                 <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="24" height="3" rx="1" fill="white"/>
                     <rect y="15" width="18" height="3" rx="1" fill="white"/>
@@ -23,6 +27,9 @@
         <p>#YokeFoundHisAom</p>
     </div>
 </header>
+
+
+
 
 <style>
 

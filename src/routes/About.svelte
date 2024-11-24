@@ -44,7 +44,7 @@
         max-width: 480px;
         width: 100%;
         position: relative;
-        top: -10%;
+        top: -100px;
         margin-bottom: -50%;
     }
     .theme {

@@ -1,6 +1,7 @@
 <script>
     import Location from './gallery/Location.svelte'
     import londonCard from '$lib/images/gallery/london/AY-287.webp'
+    import chiangmaiCard from '$lib/images/gallery/chiangmai/AY_PRE-WEDDING_CNX_001.webp'
 </script>
 
 <section id="gallery">
@@ -8,6 +9,7 @@
         <h2>PHOTO GALLERY</h2>
         <div>
             <Location caption="London, England" img={londonCard} url="gallery/london"/>
+            <Location caption="Chiang Mai, Thailand" img={chiangmaiCard} url="gallery/chiangmai"/>
         </div>
     </div>    
 </section>

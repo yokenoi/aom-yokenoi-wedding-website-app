@@ -3,6 +3,9 @@
     import Header from "./Header.svelte";
     import About from "./About.svelte";
     import Gallery from "./Gallery.svelte";
+    import Schedule from "./Schedule.svelte";
+    import Location from "./Location.svelte";
+    import Countdown from "./Countdown.svelte";
     import metaImage from '$lib/images/meta_image.webp'
 
     let menuState = $state(false);
@@ -35,3 +38,6 @@
 <Header />
 <About />
 <Gallery />
+<Schedule />
+<Location />
+<Countdown />

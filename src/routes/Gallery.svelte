@@ -37,7 +37,6 @@
         display: grid;
         justify-items: center;
         padding-top: 38%;
-        padding-bottom: 20vh;
 
         & > div {
             width: 100%;

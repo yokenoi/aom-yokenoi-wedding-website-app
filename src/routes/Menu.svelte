@@ -7,7 +7,8 @@
     const menus = [
         ["#about", "About"],
         ["#gallery", "Photo Gallery"],
-        
+        ["#schedule", "Schedule"],
+        ["#location", "Location"],
     ]
 </script>
 

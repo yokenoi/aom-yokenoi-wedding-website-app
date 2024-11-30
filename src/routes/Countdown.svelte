@@ -59,7 +59,7 @@
     }
 
     .number {
-        font-family: "Noto Serif";
+        font-family: "Noto Serif Display";
         font-weight: 500;
         font-size: 48px;
         margin: 0;

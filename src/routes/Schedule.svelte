@@ -34,9 +34,9 @@
     }
 
     span {
-        font-family: "Noto Serif";
+        font-family: "Noto Serif Display";
         font-weight: 500;
-        size: 20px;
+        font-size: 20px;
         color: #7B5E49;
     }
 

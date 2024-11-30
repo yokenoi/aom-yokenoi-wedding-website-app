@@ -106,7 +106,7 @@
     }
 
     .noto {
-        font-family: "Noto Serif";
+        font-family: "Noto Serif Display";
         text-align: center;
     }
 

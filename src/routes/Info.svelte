@@ -50,8 +50,8 @@
         border: 0.5px solid #7B5E49;
         width: fit-content;
         padding: 2px 10px;
-        margin-bottom: 8px;
         border-radius: 18px;
+        margin: 0 auto 8px;
     }
 
 </style>

@@ -4,7 +4,7 @@
     <div>
         <img src={item.img} alt={item.alt}>
         <span class="time">{item.time}</span>
-        <p class="cation">{item.caption}</p>
+        <p class="caption">{item.caption}</p>
     </div>
     {/each}
 </section>
@@ -73,7 +73,7 @@
         {
             "img": party,
             "alt": "party",
-            "time": "16:00",
+            "time": "20:30",
             "caption": "Let's party!"
         }
     ]

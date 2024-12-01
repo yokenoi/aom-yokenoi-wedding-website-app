@@ -1,6 +1,6 @@
 <script>
     const data = {
-        "Accommodation": "If you asked as to book for you, the chosen hotel will be Suan Sin Lanna. Other recommended hotels are Silayok, White House, and Suan Sin Garden",
+        "Accommodation": "If you ask us to book for you, the chosen hotel will be Suan Sin Lanna. Other recommended hotels are Silayok, White House, and Suan Sin Garden",
         "Transportation": "The wedding ceremony is helded 8km away from Suan Sin Lanna. Please check with bridemates or groommates.",
         "Parking": "Parking on street side is allowed. The parking lot will be reserved for family and crew members."
     }
